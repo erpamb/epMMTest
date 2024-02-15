@@ -1,0 +1,211 @@
+{
+  "creationTimeStamp" : null,
+  "modifiedTimeStamp" : null,
+  "createdBy" : null,
+  "modifiedBy" : null,
+  "id" : null,
+  "name" : "dmcas_scoreinputs",
+  "description" : null,
+  "revision" : 0,
+  "order" : 0,
+  "type" : null,
+  "parameterMap" : {
+    "role" : {
+      "parameter" : "role",
+      "type" : "char",
+      "label" : "Role",
+      "length" : 128,
+      "order" : 3,
+      "values" : [ "role" ],
+      "preformatted" : false
+    },
+    "vartype" : {
+      "parameter" : "vartype",
+      "type" : "char",
+      "label" : "Variable Type",
+      "length" : 128,
+      "order" : 6,
+      "values" : [ "vartype" ],
+      "preformatted" : false
+    },
+    "uname" : {
+      "parameter" : "uname",
+      "type" : "char",
+      "label" : "Uppercased Name",
+      "length" : 1024,
+      "order" : 2,
+      "values" : [ "uname" ],
+      "preformatted" : false
+    },
+    "level" : {
+      "parameter" : "level",
+      "type" : "char",
+      "label" : "Variable Level",
+      "length" : 40,
+      "order" : 4,
+      "values" : [ "level" ],
+      "preformatted" : false
+    },
+    "name" : {
+      "parameter" : "name",
+      "type" : "char",
+      "label" : "Name",
+      "length" : 1024,
+      "order" : 1,
+      "values" : [ "name" ],
+      "preformatted" : false
+    },
+    "format" : {
+      "parameter" : "format",
+      "type" : "char",
+      "label" : "Variable Format",
+      "length" : 144,
+      "order" : 8,
+      "values" : [ "format" ],
+      "preformatted" : false
+    },
+    "length" : {
+      "parameter" : "length",
+      "type" : "num",
+      "label" : "Variable Length",
+      "length" : 8,
+      "order" : 9,
+      "values" : [ "length" ],
+      "preformatted" : false
+    },
+    "label" : {
+      "parameter" : "label",
+      "type" : "char",
+      "label" : "Variable Label",
+      "length" : 1024,
+      "order" : 7,
+      "values" : [ "label" ],
+      "preformatted" : false
+    },
+    "type" : {
+      "parameter" : "type",
+      "type" : "char",
+      "label" : "Type",
+      "length" : 4,
+      "order" : 5,
+      "values" : [ "type" ],
+      "preformatted" : false
+    }
+  },
+  "data" : [ {
+    "dataMap" : {
+      "role" : "INPUT",
+      "vartype" : "",
+      "uname" : "CLAGE",
+      "level" : "INTERVAL",
+      "name" : "CLAGE",
+      "format" : "",
+      "length" : "8",
+      "label" : "",
+      "type" : "N"
+    },
+    "rowNumber" : 1,
+    "header" : null
+  }, {
+    "dataMap" : {
+      "role" : "INPUT",
+      "vartype" : "",
+      "uname" : "CLNO",
+      "level" : "INTERVAL",
+      "name" : "CLNO",
+      "format" : "",
+      "length" : "8",
+      "label" : "",
+      "type" : "N"
+    },
+    "rowNumber" : 2,
+    "header" : null
+  }, {
+    "dataMap" : {
+      "role" : "INPUT",
+      "vartype" : "",
+      "uname" : "DEBTINC",
+      "level" : "INTERVAL",
+      "name" : "DEBTINC",
+      "format" : "",
+      "length" : "8",
+      "label" : "",
+      "type" : "N"
+    },
+    "rowNumber" : 3,
+    "header" : null
+  }, {
+    "dataMap" : {
+      "role" : "INPUT",
+      "vartype" : "",
+      "uname" : "DELINQ",
+      "level" : "NOMINAL",
+      "name" : "DELINQ",
+      "format" : "",
+      "length" : "8",
+      "label" : "",
+      "type" : "N"
+    },
+    "rowNumber" : 4,
+    "header" : null
+  }, {
+    "dataMap" : {
+      "role" : "INPUT",
+      "vartype" : "",
+      "uname" : "DEROG",
+      "level" : "NOMINAL",
+      "name" : "DEROG",
+      "format" : "",
+      "length" : "8",
+      "label" : "",
+      "type" : "N"
+    },
+    "rowNumber" : 5,
+    "header" : null
+  }, {
+    "dataMap" : {
+      "role" : "INPUT",
+      "vartype" : "",
+      "uname" : "JOB",
+      "level" : "NOMINAL",
+      "name" : "JOB",
+      "format" : "",
+      "length" : "14",
+      "label" : "",
+      "type" : "C"
+    },
+    "rowNumber" : 6,
+    "header" : null
+  }, {
+    "dataMap" : {
+      "role" : "INPUT",
+      "vartype" : "",
+      "uname" : "NINQ",
+      "level" : "NOMINAL",
+      "name" : "NINQ",
+      "format" : "",
+      "length" : "8",
+      "label" : "",
+      "type" : "N"
+    },
+    "rowNumber" : 7,
+    "header" : null
+  }, {
+    "dataMap" : {
+      "role" : "INPUT",
+      "vartype" : "",
+      "uname" : "VALUE",
+      "level" : "INTERVAL",
+      "name" : "VALUE",
+      "format" : "",
+      "length" : "8",
+      "label" : "",
+      "type" : "N"
+    },
+    "rowNumber" : 8,
+    "header" : null
+  } ],
+  "version" : 1,
+  "xInteger" : false,
+  "yInteger" : false
+}

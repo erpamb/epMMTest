@@ -1,10 +1,10 @@
 {
-  "creationTimeStamp": "2024-02-16T23:09:48.782132Z",
+  "creationTimeStamp": "2024-02-16T23:14:55.286584Z",
   "createdBy": "edmdev",
-  "modifiedTimeStamp": "2024-02-16T23:09:48.782133Z",
+  "modifiedTimeStamp": "2024-02-16T23:14:55.286585Z",
   "modifiedBy": "edmdev",
   "version": 1,
-  "id": "e402c49b-1afc-41ba-a82f-70957c619400",
+  "id": "41ca8e1a-4d02-4e23-a507-d67cc75f58c4",
   "destinationName": "epAzureTest4",
   "destination": {
     "creationTimeStamp": "2024-02-16T22:23:51.60215Z",
@@ -94,11 +94,11 @@
     "publishLevel": "decision"
   },
   "properties": {
-    "containerKey": "sha256:621e8f15ebacb3fb22066c896c90122d5db59f610c670c4b1fa904f0d1d4cf10",
-    "dockerFileUri": "/files/files/36c33775-bd06-49f4-89b5-d563984d7fbc",
+    "containerKey": "sha256:26862a3eb804c60d7cec3b643fff45e6a5506e8c8563730945056bedce9e548b",
+    "dockerFileUri": "/files/files/4ab3b5c9-56ef-4b55-ab41-125c9e396ead",
     "gitFolderPath": "DecisionEPTest1_0",
     "gitRepositoryURL": "https://github.com/erpamb/epMMTest.git",
-    "imageUrl": "mmtest5526.azurecr.io/decisioneptest1_0:2"
+    "imageUrl": "mmtest5526.azurecr.io/decisioneptest1_0:3"
   },
   "sourceURI": "/decisions/flows/e3857daf-b0aa-40fa-8c1c-35757c5434b3/revisions/57bb7463-9975-4fe9-9efc-d2fbcbb8841c",
   "resources": [
@@ -322,5 +322,5 @@
     "name": "Model Publish service"
   },
   "baseImage": {},
-  "tags": ",2"
+  "tags": ",3"
 }

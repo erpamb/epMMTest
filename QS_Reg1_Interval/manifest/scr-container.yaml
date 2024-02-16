@@ -9,7 +9,7 @@ Destination:
   ImageName: qs_reg1_interval
   Tags:
   - latest
-  - "1.0"
+  - "2.0"
 ResourceCategories: []
 Languages: []
 Databases: []

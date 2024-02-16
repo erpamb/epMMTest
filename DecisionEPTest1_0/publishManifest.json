@@ -1,0 +1,326 @@
+{
+  "creationTimeStamp": "2024-02-16T23:09:48.782132Z",
+  "createdBy": "edmdev",
+  "modifiedTimeStamp": "2024-02-16T23:09:48.782133Z",
+  "modifiedBy": "edmdev",
+  "version": 1,
+  "id": "e402c49b-1afc-41ba-a82f-70957c619400",
+  "destinationName": "epAzureTest4",
+  "destination": {
+    "creationTimeStamp": "2024-02-16T22:23:51.60215Z",
+    "createdBy": "edmdev",
+    "modifiedTimeStamp": "2024-02-16T22:23:51.602152Z",
+    "modifiedBy": "edmdev",
+    "version": 2,
+    "id": "d3997176-3e3e-442b-a66f-bf00be091bdc",
+    "name": "epAzureTest4",
+    "destinationType": "azure",
+    "properties": [
+      {
+        "name": "baseRepoUrl",
+        "value": "mmtest5526.azurecr.io"
+      },
+      {
+        "name": "tenantId",
+        "value": "b1c14d5c-3625-45b3-a430-9552373a0c2f"
+      },
+      {
+        "name": "subscriptionId",
+        "value": "224f27e0-745f-452c-a442-70e79d24ce7f"
+      },
+      {
+        "name": "resourceGroupName",
+        "value": "modelManager"
+      },
+      {
+        "name": "kubernetesCluster",
+        "value": "validationAKS"
+      },
+      {
+        "name": "region"
+      },
+      {
+        "name": "credDomainId",
+        "value": "epAzure"
+      },
+      {
+        "name": "RemoteRepositoryURL",
+        "value": "https://github.com/erpamb/epMMTest.git"
+      },
+      {
+        "name": "UserEmail",
+        "value": "ernest.pambuku@sas.com"
+      }
+    ],
+    "links": [
+      {
+        "method": "GET",
+        "rel": "up",
+        "href": "/modelPublish/destinations",
+        "uri": "/modelPublish/destinations",
+        "type": "application/vnd.sas.collection"
+      },
+      {
+        "method": "GET",
+        "rel": "self",
+        "href": "/modelPublish/destinations/epAzureTest4",
+        "uri": "/modelPublish/destinations/epAzureTest4",
+        "type": "application/vnd.sas.models.publishing.destination"
+      },
+      {
+        "method": "DELETE",
+        "rel": "delete",
+        "href": "/modelPublish/destinations/epAzureTest4",
+        "uri": "/modelPublish/destinations/epAzureTest4"
+      },
+      {
+        "method": "PUT",
+        "rel": "update",
+        "href": "/modelPublish/destinations/epAzureTest4",
+        "uri": "/modelPublish/destinations/epAzureTest4",
+        "type": "application/vnd.sas.models.publishing.destination"
+      }
+    ]
+  },
+  "content": {
+    "creationTimeStamp": "0001-01-01T00:00:00Z",
+    "modifiedTimeStamp": "0001-01-01T00:00:00Z",
+    "modelName": "DecisionEPTest1_0",
+    "principalID": "e3857daf-b0aa-40fa-8c1c-35757c5434b3",
+    "codeType": "ds2",
+    "codeURI": "/decisions/flows/e3857daf-b0aa-40fa-8c1c-35757c5434b3/revisions/57bb7463-9975-4fe9-9efc-d2fbcbb8841c/code?rootPackageName=DecisionEPTest1_0\u0026traversedPathFlag=false\u0026isGeneratingRuleFiredColumn=false\u0026codeTarget=docker",
+    "codeMediaType": "text/vnd.sas.source.ds2.async",
+    "sourceURI": "/decisions/flows/e3857daf-b0aa-40fa-8c1c-35757c5434b3/revisions/57bb7463-9975-4fe9-9efc-d2fbcbb8841c",
+    "publishLevel": "decision"
+  },
+  "properties": {
+    "containerKey": "sha256:621e8f15ebacb3fb22066c896c90122d5db59f610c670c4b1fa904f0d1d4cf10",
+    "dockerFileUri": "/files/files/36c33775-bd06-49f4-89b5-d563984d7fbc",
+    "gitFolderPath": "DecisionEPTest1_0",
+    "gitRepositoryURL": "https://github.com/erpamb/epMMTest.git",
+    "imageUrl": "mmtest5526.azurecr.io/decisioneptest1_0:2"
+  },
+  "sourceURI": "/decisions/flows/e3857daf-b0aa-40fa-8c1c-35757c5434b3/revisions/57bb7463-9975-4fe9-9efc-d2fbcbb8841c",
+  "resources": [
+    {
+      "creationTimeStamp": "2024-02-14T21:25:33.116Z",
+      "createdBy": "edmdev",
+      "modifiedTimeStamp": "2024-02-16T22:20:29.89Z",
+      "modifiedBy": "edmdev",
+      "name": "QS_Tree1 (1) EP",
+      "uri": "/modelRepository/models/a2f7e868-b2f7-4bc8-85bd-a53c5405dac8",
+      "mediaType": "application/vnd.sas.models.model",
+      "contentVersion": "8.0",
+      "inline": true
+    }
+  ],
+  "inputVariables": [
+    {
+      "name": "BAD",
+      "description": "",
+      "role": "",
+      "type": "decimal",
+      "level": "",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+    },
+    {
+      "name": "CLAGE",
+      "description": "",
+      "role": "",
+      "type": "decimal",
+      "level": "",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+    },
+    {
+      "name": "CLNO",
+      "description": "",
+      "role": "",
+      "type": "decimal",
+      "level": "",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+    },
+    {
+      "name": "DEBTINC",
+      "description": "",
+      "role": "",
+      "type": "decimal",
+      "level": "",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+    },
+    {
+      "name": "DELINQ",
+      "description": "",
+      "role": "",
+      "type": "decimal",
+      "level": "",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+    },
+    {
+      "name": "DEROG",
+      "description": "",
+      "role": "",
+      "type": "decimal",
+      "level": "",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+    },
+    {
+      "name": "JOB",
+      "description": "",
+      "role": "",
+      "type": "string",
+      "level": "",
+      "format": "",
+      "aggregation": "",
+      "length": 7
+    },
+    {
+      "name": "LOAN",
+      "description": "",
+      "role": "",
+      "type": "decimal",
+      "level": "",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+    },
+    {
+      "name": "MORTDUE",
+      "description": "",
+      "role": "",
+      "type": "decimal",
+      "level": "",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+    },
+    {
+      "name": "NINQ",
+      "description": "",
+      "role": "",
+      "type": "decimal",
+      "level": "",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+    },
+    {
+      "name": "REASON",
+      "description": "",
+      "role": "",
+      "type": "string",
+      "level": "",
+      "format": "",
+      "aggregation": "",
+      "length": 7
+    },
+    {
+      "name": "VALUE",
+      "description": "",
+      "role": "",
+      "type": "decimal",
+      "level": "",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+    },
+    {
+      "name": "YOJ",
+      "description": "",
+      "role": "",
+      "type": "decimal",
+      "level": "",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+    }
+  ],
+  "outputVariables": [
+    {
+      "name": "EM_EVENTPROBABILITY",
+      "description": "",
+      "role": "",
+      "type": "decimal",
+      "level": "",
+      "format": "",
+      "aggregation": "",
+      "length": null
+    },
+    {
+      "name": "EM_PROBABILITY",
+      "description": "",
+      "role": "",
+      "type": "decimal",
+      "level": "",
+      "format": "",
+      "aggregation": "",
+      "length": null
+    },
+    {
+      "name": "P_BAD1",
+      "description": "",
+      "role": "",
+      "type": "decimal",
+      "level": "",
+      "format": "",
+      "aggregation": "",
+      "length": null
+    },
+    {
+      "name": "I_BAD",
+      "description": "",
+      "role": "",
+      "type": "string",
+      "level": "",
+      "format": "",
+      "aggregation": "",
+      "length": null
+    },
+    {
+      "name": "EM_CLASSIFICATION",
+      "description": "",
+      "role": "",
+      "type": "string",
+      "level": "",
+      "format": "",
+      "aggregation": "",
+      "length": null
+    },
+    {
+      "name": "P_BAD0",
+      "description": "",
+      "role": "",
+      "type": "decimal",
+      "level": "",
+      "format": "",
+      "aggregation": "",
+      "length": null
+    }
+  ],
+  "component": {
+    "majorVersion": 1,
+    "name": "DecisionEPTest"
+  },
+  "product": {
+    "majorVersion": 3,
+    "minorVersion": 130,
+    "versionName": "3.130.3",
+    "name": "Decisions Service"
+  },
+  "service": {
+    "name": "Model Publish service"
+  },
+  "baseImage": {},
+  "tags": ",2"
+}

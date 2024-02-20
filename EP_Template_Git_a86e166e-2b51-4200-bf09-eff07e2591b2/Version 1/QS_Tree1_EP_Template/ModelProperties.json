@@ -1,0 +1,21 @@
+{
+   "creationTimeStamp": "2024-02-20T21:51:06.438Z",
+   "createdBy": "edmdev",
+   "modifiedTimeStamp": "2024-02-20T21:52:34.278Z",
+   "modifiedBy": "edmdev",
+   "id": "488d5dce-7a6e-4602-9f8d-3122dddcae8c",
+   "name": "QS_Tree1 EP Template",
+   "description": "Decision Tree",
+   "scoreCodeType": "dataStep",
+   "algorithm": "tree",
+   "function": "classification",
+   "modeler": "kriapo",
+   "modelType": "dataStep",
+   "trainTable": "/dataTables/dataSources/cas~fs~cas-shared-default~fs~Public/tables/HMEQ_TEST",
+   "targetVariable": "BAD",
+   "tool": "Model Studio",
+   "toolVersion": "8.2",
+   "externalModelId": "ee34d555-cefd-4aef-9475-03141ca86c84",
+   "modelVersionName": "1.0",
+   "custom properties": []
+}

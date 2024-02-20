@@ -1,0 +1,213 @@
+{
+  "creationTimeStamp" : null,
+  "modifiedTimeStamp" : null,
+  "createdBy" : null,
+  "modifiedBy" : null,
+  "id" : null,
+  "name" : "dmcas_scoreoutputs",
+  "description" : null,
+  "revision" : 0,
+  "order" : 0,
+  "type" : null,
+  "parameterMap" : {
+    "ROLE" : {
+      "parameter" : "ROLE",
+      "type" : "char",
+      "label" : "Role",
+      "length" : 32,
+      "order" : 3,
+      "values" : [ "ROLE" ],
+      "preformatted" : false
+    },
+    "UNAME" : {
+      "parameter" : "UNAME",
+      "type" : "char",
+      "label" : "Uppercased Name",
+      "length" : 256,
+      "order" : 2,
+      "values" : [ "UNAME" ],
+      "preformatted" : false
+    },
+    "FORMAT" : {
+      "parameter" : "FORMAT",
+      "type" : "char",
+      "label" : "Variable Format",
+      "length" : 36,
+      "order" : 6,
+      "values" : [ "FORMAT" ],
+      "preformatted" : false
+    },
+    "CREATOR" : {
+      "parameter" : "CREATOR",
+      "type" : "char",
+      "label" : "Creator",
+      "length" : 256,
+      "order" : 8,
+      "values" : [ "CREATOR" ],
+      "preformatted" : false
+    },
+    "LENGTH" : {
+      "parameter" : "LENGTH",
+      "type" : "num",
+      "label" : "Variable Length",
+      "length" : 8,
+      "order" : 7,
+      "values" : [ "LENGTH" ],
+      "preformatted" : false
+    },
+    "CREATORGUID" : {
+      "parameter" : "CREATORGUID",
+      "type" : "char",
+      "label" : "Creator GUID",
+      "length" : 32,
+      "order" : 10,
+      "values" : [ "CREATORGUID" ],
+      "preformatted" : false
+    },
+    "VARTYPE" : {
+      "parameter" : "VARTYPE",
+      "type" : "char",
+      "label" : "Variable Type",
+      "length" : 32,
+      "order" : 5,
+      "values" : [ "VARTYPE" ],
+      "preformatted" : false
+    },
+    "TYPE" : {
+      "parameter" : "TYPE",
+      "type" : "char",
+      "label" : "Type",
+      "length" : 1,
+      "order" : 4,
+      "values" : [ "TYPE" ],
+      "preformatted" : false
+    },
+    "FUNCTION" : {
+      "parameter" : "FUNCTION",
+      "type" : "char",
+      "label" : "Function",
+      "length" : 32,
+      "order" : 9,
+      "values" : [ "FUNCTION" ],
+      "preformatted" : false
+    },
+    "NAME" : {
+      "parameter" : "NAME",
+      "type" : "char",
+      "label" : "Name",
+      "length" : 256,
+      "order" : 1,
+      "values" : [ "NAME" ],
+      "preformatted" : false
+    }
+  },
+  "data" : [ {
+    "dataMap" : {
+      "ROLE" : "CLASSIFICATION",
+      "UNAME" : "EM_CLASSIFICATION",
+      "FORMAT" : "",
+      "CREATOR" : "tree",
+      "LENGTH" : "12",
+      "CREATORGUID" : "ee34d555-cefd-4aef-9475-03141ca8",
+      "VARTYPE" : "",
+      "TYPE" : "C",
+      "FUNCTION" : "CLASSIFICATION",
+      "NAME" : "EM_CLASSIFICATION"
+    },
+    "rowNumber" : 1,
+    "header" : null
+  }, {
+    "dataMap" : {
+      "ROLE" : "PREDICT",
+      "UNAME" : "EM_EVENTPROBABILITY",
+      "FORMAT" : "",
+      "CREATOR" : "tree",
+      "LENGTH" : "8",
+      "CREATORGUID" : "ee34d555-cefd-4aef-9475-03141ca8",
+      "VARTYPE" : "",
+      "TYPE" : "N",
+      "FUNCTION" : "PREDICT",
+      "NAME" : "EM_EVENTPROBABILITY"
+    },
+    "rowNumber" : 2,
+    "header" : null
+  }, {
+    "dataMap" : {
+      "ROLE" : "PREDICT",
+      "UNAME" : "EM_PROBABILITY",
+      "FORMAT" : "",
+      "CREATOR" : "tree",
+      "LENGTH" : "8",
+      "CREATORGUID" : "ee34d555-cefd-4aef-9475-03141ca8",
+      "VARTYPE" : "",
+      "TYPE" : "N",
+      "FUNCTION" : "PREDICT",
+      "NAME" : "EM_PROBABILITY"
+    },
+    "rowNumber" : 3,
+    "header" : null
+  }, {
+    "dataMap" : {
+      "ROLE" : "CLASSIFICATION",
+      "UNAME" : "I_BAD",
+      "FORMAT" : "",
+      "CREATOR" : "tree",
+      "LENGTH" : "12",
+      "CREATORGUID" : "ee34d555-cefd-4aef-9475-03141ca8",
+      "VARTYPE" : "",
+      "TYPE" : "C",
+      "FUNCTION" : "CLASSIFICATION",
+      "NAME" : "I_BAD"
+    },
+    "rowNumber" : 4,
+    "header" : null
+  }, {
+    "dataMap" : {
+      "ROLE" : "PREDICT",
+      "UNAME" : "P_BAD0",
+      "FORMAT" : "",
+      "CREATOR" : "tree",
+      "LENGTH" : "8",
+      "CREATORGUID" : "ee34d555-cefd-4aef-9475-03141ca8",
+      "VARTYPE" : "",
+      "TYPE" : "N",
+      "FUNCTION" : "PREDICT",
+      "NAME" : "P_BAD0"
+    },
+    "rowNumber" : 5,
+    "header" : null
+  }, {
+    "dataMap" : {
+      "ROLE" : "PREDICT",
+      "UNAME" : "P_BAD1",
+      "FORMAT" : "",
+      "CREATOR" : "tree",
+      "LENGTH" : "8",
+      "CREATORGUID" : "ee34d555-cefd-4aef-9475-03141ca8",
+      "VARTYPE" : "",
+      "TYPE" : "N",
+      "FUNCTION" : "PREDICT",
+      "NAME" : "P_BAD1"
+    },
+    "rowNumber" : 6,
+    "header" : null
+  }, {
+    "dataMap" : {
+      "ROLE" : "INPUT",
+      "UNAME" : "_LEAF_ID_",
+      "FORMAT" : "",
+      "CREATOR" : "tree",
+      "LENGTH" : "8",
+      "CREATORGUID" : "ee34d555-cefd-4aef-9475-03141ca8",
+      "VARTYPE" : "",
+      "TYPE" : "N",
+      "FUNCTION" : "TRANSFORM",
+      "NAME" : "_leaf_id_"
+    },
+    "rowNumber" : 7,
+    "header" : null
+  } ],
+  "version" : 1,
+  "xInteger" : false,
+  "yInteger" : false
+}

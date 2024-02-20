@@ -1,1 +1,2 @@
 Decision_Tree_EP_Template published from /modelRepository/models/f517932c-82c6-4b3e-8789-57a0f7459cad at 2024-02-20 21:47:24.38985344 +0000 UTC m=+36479.016994817 by edmdev. Branch: main Tag: v2024.0220.1
+QS_Tree1_EP_Template published from /modelRepository/models/488d5dce-7a6e-4602-9f8d-3122dddcae8c at 2024-02-20 21:53:03.61040205 +0000 UTC m=+36818.237543394 by edmdev. Branch: main Tag: v2024.0220.2

@@ -9,7 +9,7 @@ Destination:
   ImageName: decision_tree_ep_azure
   Tags:
   - latest
-  - "2.0"
+  - "1.0"
 ResourceCategories: []
 Languages: []
 Databases: []

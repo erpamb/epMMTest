@@ -1,0 +1,15 @@
+Application:
+  Name: decision_tree_deploy_test
+MasterImage:
+  URL: repulpmaster.unx.sas.com/cdp-release-x64_oci_linux_2-docker-latest/sas-decisions-runtime-components:1.56.2-20240216.1708124732038
+BaseImage:
+  URL: repulpmaster.unx.sas.com/cdp-release-x64_oci_linux_2-docker-latest/sas-decisions-runtime-base:1.76.1-20240216.1708123891198
+Destination:
+  URL: repulpmaster.unx.sas.com
+  ImageName: Decision_Tree_Deploy_Test
+  Tags:
+  - latest
+ResourceCategories: []
+Languages: []
+Databases: []
+PythonResources: []

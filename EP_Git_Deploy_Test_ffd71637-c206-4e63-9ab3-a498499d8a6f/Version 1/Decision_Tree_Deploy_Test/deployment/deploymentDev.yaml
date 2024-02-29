@@ -1,0 +1,90 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: decision-tree-deploy-test
+  namespace: default
+  labels:
+    app: sas-scr-PLACEHOLDER
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sas-scr-PLACEHOLDER
+  template:
+    metadata:
+      labels:
+        app: sas-scr-PLACEHOLDER
+    spec:
+      containers:
+        - name: decision-tree-deploy-test
+          image: 
+          resources:
+            requests:
+              memory: "320Mi"
+              cpu: "200m"
+          startupProbe:
+            httpGet:
+              path: /internal/ready
+              port: 8080
+              scheme: HTTP
+            periodSeconds: 10
+            failureThreshold: 30
+          livenessProbe:
+            httpGet:
+              path: /internal/live
+              port: 8080
+              scheme: HTTP
+            initialDelaySeconds: 30
+            timeoutSeconds: 5
+            periodSeconds: 10
+            successThreshold: 1
+            failureThreshold: 3
+          readinessProbe:
+            httpGet:
+              path: /internal/ready
+              port: 8080
+              scheme: HTTP
+            initialDelaySeconds: 30
+            timeoutSeconds: 5
+            periodSeconds: 10
+            successThreshold: 1
+            failureThreshold: 3
+      tolerations:
+      - effect: NoSchedule
+        key: workload.sas.com/class
+        operator: Equal
+        value: mas      
+      affinity:
+        nodeAffinity:
+          preferredDuringSchedulingIgnoredDuringExecution:
+          - preference:
+              matchExpressions:
+              - key: workload.sas.com/class
+                operator: In
+                values:
+                - mas
+              matchFields: []
+            weight: 100
+          - preference:
+              matchExpressions:
+              - key: workload.sas.com/class
+                operator: NotIn
+                values:
+                - compute
+                - cas
+                - stateful
+                - connect
+              matchFields: []
+            weight: 50
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+            - matchExpressions:
+              - key: kubernetes.azure.com/mode
+                operator: NotIn
+                values:
+                - system
+              - key: cloud.google.com/gke-nodepool
+                operator: NotIn
+                values:
+                - default
+              matchFields: []

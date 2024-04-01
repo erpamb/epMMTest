@@ -1,0 +1,33 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    nginx.ingress.kubernetes.io/affinity: cookie
+    nginx.ingress.kubernetes.io/affinity-mode: persistent
+    nginx.ingress.kubernetes.io/proxy-body-size: 2048m
+    nginx.ingress.kubernetes.io/proxy-connect-timeout: "60"
+    nginx.ingress.kubernetes.io/proxy-read-timeout: "3600"
+    nginx.ingress.kubernetes.io/proxy-send-timeout: "3600"
+    nginx.ingress.kubernetes.io/client-body-buffer-size: 1m
+    nginx.ingress.kubernetes.io/rewrite-target: /MASCONTEXT/$2
+    nginx.ingress.kubernetes.io/session-cookie-name: sas-scr-ingress-nginx
+    nginx.ingress.kubernetes.io/session-cookie-path: /MASCONTEXT/
+    nginx.ingress.kubernetes.io/session-cookie-samesite: Lax
+    sas.com/component-name: sas-scr-PLACEHOLDER
+  labels:
+    app.kubernetes.io/name: sas-scr-PLACEHOLDER
+  name: sas-scr-PLACEHOLDER
+  namespace: default
+spec:
+  rules:
+  - host: HOSTNAME
+    http:
+      paths:
+      - backend:
+          serviceName: sas-scr-PLACEHOLDER
+          servicePort: 443
+        path: /MASCONTEXT(/|$)(.*)
+  tls:
+  - hosts:
+    - HOSTNAME

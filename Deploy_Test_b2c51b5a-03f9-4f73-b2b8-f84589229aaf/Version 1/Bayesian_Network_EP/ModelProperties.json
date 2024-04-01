@@ -1,7 +1,7 @@
 {
    "creationTimeStamp": "2024-04-01T20:06:28.513Z",
    "createdBy": "edmdev",
-   "modifiedTimeStamp": "2024-04-01T20:06:32.216Z",
+   "modifiedTimeStamp": "2024-04-01T20:09:13.409Z",
    "modifiedBy": "edmdev",
    "id": "7c6377fc-1b5f-4ceb-a4b7-ad8999d39a24",
    "name": "Bayesian Network EP",
@@ -15,7 +15,8 @@
    "targetEvent": "1",
    "tool": "Model Studio",
    "toolVersion": "V2020.1",
+   "publishTimeStamp": 1712002149698,
    "externalModelId": "1b7ef907-ac2d-4648-aae2-c2e679fc2397",
-   "modelVersionName": "1.0",
+   "modelVersionName": "2.0",
    "custom properties": []
 }

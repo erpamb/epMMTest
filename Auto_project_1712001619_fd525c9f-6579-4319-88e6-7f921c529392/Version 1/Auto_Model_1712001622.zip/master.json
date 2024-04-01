@@ -1,0 +1,473 @@
+{
+  "version" : 2,
+  "name" : "Bayesian Network (Pipeline 1)",
+  "modeler" : "edmdev",
+  "function" : "classification",
+  "algorithm" : "bnet",
+  "tool" : "Model Studio",
+  "toolVersion" : "V2023.03",
+  "targetEvent" : "           1",
+  "sourceUri" : {
+    "name" : "Bayesian Network",
+    "uri" : "/analyticsComponents/components/41e1c74b-834a-4f41-acc1-ddcaf56fb809",
+    "uriType" : "reference",
+    "mediaType" : "application/vnd.sas.analytics.component"
+  },
+  "candidateChampion" : true,
+  "nondeterministic" : false,
+  "datasourceUri" : {
+    "name" : "HMEQ_TRAIN",
+    "uri" : "/dataTables/dataSources/cas~fs~cas-shared-default~fs~Public/tables/HMEQ_TRAIN",
+    "uriType" : "reference"
+  },
+  "externalModelId" : "41e1c74b-834a-4f41-acc1-ddcaf56fb809",
+  "fitStatUri" : {
+    "name" : "dmcas_fitstat",
+    "uri" : "/files/files/8389a73e-e8d9-4fd8-bdfc-ec46c8316f42",
+    "uriType" : "child",
+    "mediaType" : "application/vnd.sas.analytics.report+json"
+  },
+  "sasOptions" : "options VALIDMEMNAME=EXTEND VALIDVARNAME=ANY;\n",
+  "partitionLevels" : [ {
+    "variableName" : "_PartInd_",
+    "dataRole" : "train",
+    "type" : "partition",
+    "value" : "           1"
+  }, {
+    "variableName" : "_PartInd_",
+    "dataRole" : "validate",
+    "type" : "partition",
+    "value" : "           0"
+  }, {
+    "variableName" : "_PartInd_",
+    "dataRole" : "test",
+    "type" : "partition",
+    "value" : "           2"
+  } ],
+  "eventLevels" : [ {
+    "variableName" : "I_BAD",
+    "eventValue" : ""
+  }, {
+    "variableName" : "P_BAD1",
+    "eventValue" : "           1"
+  }, {
+    "variableName" : "P_BAD0",
+    "eventValue" : "           0"
+  } ],
+  "interactions" : [ ],
+  "modelTransformation" : {
+    "inputVariables" : [ {
+      "name" : "CLAGE",
+      "role" : "input",
+      "type" : "numeric",
+      "level" : "interval",
+      "label" : "",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "CLNO",
+      "role" : "input",
+      "type" : "numeric",
+      "level" : "interval",
+      "label" : "",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "DEBTINC",
+      "role" : "input",
+      "type" : "numeric",
+      "level" : "interval",
+      "label" : "",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "DELINQ",
+      "role" : "input",
+      "type" : "numeric",
+      "level" : "nominal",
+      "label" : "",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "DEROG",
+      "role" : "input",
+      "type" : "numeric",
+      "level" : "nominal",
+      "label" : "",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "JOB",
+      "role" : "input",
+      "type" : "string",
+      "level" : "nominal",
+      "label" : "",
+      "length" : 7,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "LOAN",
+      "role" : "input",
+      "type" : "numeric",
+      "level" : "interval",
+      "label" : "",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "MORTDUE",
+      "role" : "input",
+      "type" : "numeric",
+      "level" : "interval",
+      "label" : "",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "NINQ",
+      "role" : "input",
+      "type" : "numeric",
+      "level" : "nominal",
+      "label" : "",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "REASON",
+      "role" : "input",
+      "type" : "string",
+      "level" : "binary",
+      "label" : "",
+      "length" : 7,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "VALUE",
+      "role" : "input",
+      "type" : "numeric",
+      "level" : "interval",
+      "label" : "",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "YOJ",
+      "role" : "input",
+      "type" : "numeric",
+      "level" : "interval",
+      "label" : "",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    } ],
+    "outputVariables" : [ {
+      "name" : "EM_CLASSIFICATION",
+      "role" : "classification",
+      "type" : "string",
+      "label" : "Predicted for BAD",
+      "length" : 12,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "EM_EVENTPROBABILITY",
+      "role" : "prediction",
+      "type" : "numeric",
+      "label" : "Probability for BAD=1",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "EM_PROBABILITY",
+      "role" : "prediction",
+      "type" : "numeric",
+      "label" : "Probability of Classification",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "IMP_CLAGE",
+      "role" : "input",
+      "type" : "numeric",
+      "label" : "Imputed CLAGE",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "IMP_CLNO",
+      "role" : "input",
+      "type" : "numeric",
+      "label" : "Imputed CLNO",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "IMP_DEBTINC",
+      "role" : "input",
+      "type" : "numeric",
+      "label" : "Imputed DEBTINC",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "IMP_DELINQ",
+      "role" : "input",
+      "type" : "numeric",
+      "label" : "Imputed DELINQ",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "IMP_DEROG",
+      "role" : "input",
+      "type" : "numeric",
+      "label" : "Imputed DEROG",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "IMP_JOB",
+      "role" : "input",
+      "type" : "string",
+      "label" : "Imputed JOB",
+      "length" : 7,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "IMP_MORTDUE",
+      "role" : "input",
+      "type" : "numeric",
+      "label" : "Imputed MORTDUE",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "IMP_NINQ",
+      "role" : "input",
+      "type" : "numeric",
+      "label" : "Imputed NINQ",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "IMP_REASON",
+      "role" : "input",
+      "type" : "string",
+      "label" : "Imputed REASON",
+      "length" : 7,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "IMP_VALUE",
+      "role" : "input",
+      "type" : "numeric",
+      "label" : "Imputed VALUE",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "IMP_YOJ",
+      "role" : "input",
+      "type" : "numeric",
+      "label" : "Imputed YOJ",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "I_BAD",
+      "role" : "classification",
+      "type" : "string",
+      "label" : "Into: BAD",
+      "length" : 12,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "P_BAD0",
+      "role" : "prediction",
+      "type" : "numeric",
+      "label" : "Predicted: BAD=0",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "P_BAD1",
+      "role" : "prediction",
+      "type" : "numeric",
+      "label" : "Predicted: BAD=1",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "_P_",
+      "role" : "input",
+      "type" : "numeric",
+      "label" : "",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "_WARN_",
+      "role" : "input",
+      "type" : "string",
+      "label" : "Warnings",
+      "length" : 4,
+      "format" : "",
+      "transformationVariable" : false
+    } ],
+    "steps" : [ {
+      "sequence" : 1,
+      "type" : "astore",
+      "stepUri" : {
+        "name" : "_3WEVP2SW6JE6PTWCV0OEMK8W9_ast",
+        "uri" : "/dataTables/dataSources/cas~fs~cas-shared-default~fs~Analytics_Project_5b27354e-28a2-49f1-8cd4-16c5315bc1b4/tables/_3WEVP2SW6JE6PTWCV0OEMK8W9_AST?state=loaded",
+        "uriType" : "copy",
+        "contentType" : "astore"
+      },
+      "inputVariables" : [ ],
+      "outputVariables" : [ ]
+    } ]
+  },
+  "transformations" : [ {
+    "inputVariables" : [ ],
+    "outputVariables" : [ ],
+    "steps" : [ {
+      "sequence" : 1,
+      "type" : "ds1",
+      "code" : "\n* Imputation Method = MEAN ;\nLabel 'IMP_CLAGE'n = 'Imputed CLAGE';\nLength 'IMP_CLAGE'n 8;\nif missing('CLAGE'n) then do;\n   'IMP_CLAGE'n = 182.72103159;\nend;\nelse 'IMP_CLAGE'n = 'CLAGE'n;\n\n* Imputation Method = MEAN ;\nLabel 'IMP_CLNO'n = 'Imputed CLNO';\nLength 'IMP_CLNO'n 8;\nif missing('CLNO'n) then do;\n   'IMP_CLNO'n = 21.133236785;\nend;\nelse 'IMP_CLNO'n = 'CLNO'n;\n\n* Imputation Method = MEAN ;\nLabel 'IMP_DEBTINC'n = 'Imputed DEBTINC';\nLength 'IMP_DEBTINC'n 8;\nif missing('DEBTINC'n) then do;\n   'IMP_DEBTINC'n = 33.34492691;\nend;\nelse 'IMP_DEBTINC'n = 'DEBTINC'n;\n\n* Imputation Method = COUNT ;\nLabel 'IMP_DELINQ'n = 'Imputed DELINQ';\nLength 'IMP_DELINQ'n 8;\nif missing('DELINQ'n) then do;\n   'IMP_DELINQ'n = 0;\nend;\nelse 'IMP_DELINQ'n = 'DELINQ'n;\n\n* Imputation Method = COUNT ;\nLabel 'IMP_DEROG'n = 'Imputed DEROG';\nLength 'IMP_DEROG'n 8;\nif missing('DEROG'n) then do;\n   'IMP_DEROG'n = 0;\nend;\nelse 'IMP_DEROG'n = 'DEROG'n;\n\n* Imputation Method = COUNT ;\nLabel 'IMP_JOB'n = 'Imputed JOB';\nLength 'IMP_JOB'n $7;\nif missing('JOB'n) then do;\n   'IMP_JOB'n = 'Other';\nend;\nelse 'IMP_JOB'n = 'JOB'n;\n\n* Imputation Method = MEAN ;\nLabel 'IMP_MORTDUE'n = 'Imputed MORTDUE';\nLength 'IMP_MORTDUE'n 8;\nif missing('MORTDUE'n) then do;\n   'IMP_MORTDUE'n = 74297.910752;\nend;\nelse 'IMP_MORTDUE'n = 'MORTDUE'n;\n\n* Imputation Method = COUNT ;\nLabel 'IMP_NINQ'n = 'Imputed NINQ';\nLength 'IMP_NINQ'n 8;\nif missing('NINQ'n) then do;\n   'IMP_NINQ'n = 0;\nend;\nelse 'IMP_NINQ'n = 'NINQ'n;\n\n* Imputation Method = COUNT ;\nLabel 'IMP_REASON'n = 'Imputed REASON';\nLength 'IMP_REASON'n $7;\nif missing('REASON'n) then do;\n   'IMP_REASON'n = 'DebtCon';\nend;\nelse 'IMP_REASON'n = 'REASON'n;\n\n* Imputation Method = MEAN ;\nLabel 'IMP_VALUE'n = 'Imputed VALUE';\nLength 'IMP_VALUE'n 8;\nif missing('VALUE'n) then do;\n   'IMP_VALUE'n = 103838.32787;\nend;\nelse 'IMP_VALUE'n = 'VALUE'n;\n\n* Imputation Method = MEAN ;\nLabel 'IMP_YOJ'n = 'Imputed YOJ';\nLength 'IMP_YOJ'n 8;\nif missing('YOJ'n) then do;\n   'IMP_YOJ'n = 8.8720137825;\nend;\nelse 'IMP_YOJ'n = 'YOJ'n;\n",
+      "inputVariables" : [ ],
+      "outputVariables" : [ ]
+    } ]
+  } ],
+  "trainInputs" : [ {
+    "name" : "IMP_CLAGE",
+    "role" : "input",
+    "type" : "numeric",
+    "label" : "Imputed CLAGE",
+    "length" : 8,
+    "transformationVariable" : true
+  }, {
+    "name" : "IMP_CLNO",
+    "role" : "input",
+    "type" : "numeric",
+    "label" : "Imputed CLNO",
+    "length" : 8,
+    "transformationVariable" : true
+  }, {
+    "name" : "IMP_DEBTINC",
+    "role" : "input",
+    "type" : "numeric",
+    "label" : "Imputed DEBTINC",
+    "length" : 8,
+    "transformationVariable" : true
+  }, {
+    "name" : "IMP_MORTDUE",
+    "role" : "input",
+    "type" : "numeric",
+    "label" : "Imputed MORTDUE",
+    "length" : 8,
+    "transformationVariable" : true
+  }, {
+    "name" : "IMP_VALUE",
+    "role" : "input",
+    "type" : "numeric",
+    "label" : "Imputed VALUE",
+    "length" : 8,
+    "transformationVariable" : true
+  }, {
+    "name" : "IMP_YOJ",
+    "role" : "input",
+    "type" : "numeric",
+    "label" : "Imputed YOJ",
+    "length" : 8,
+    "transformationVariable" : true
+  }, {
+    "name" : "LOAN",
+    "role" : "input",
+    "type" : "numeric",
+    "level" : "interval",
+    "label" : "",
+    "length" : 8,
+    "format" : "",
+    "transformationVariable" : false
+  }, {
+    "name" : "IMP_DELINQ",
+    "role" : "input",
+    "type" : "numeric",
+    "label" : "Imputed DELINQ",
+    "length" : 8,
+    "transformationVariable" : true
+  }, {
+    "name" : "IMP_DEROG",
+    "role" : "input",
+    "type" : "numeric",
+    "label" : "Imputed DEROG",
+    "length" : 8,
+    "transformationVariable" : true
+  }, {
+    "name" : "IMP_JOB",
+    "role" : "input",
+    "type" : "string",
+    "label" : "Imputed JOB",
+    "length" : 7,
+    "transformationVariable" : true
+  }, {
+    "name" : "IMP_NINQ",
+    "role" : "input",
+    "type" : "numeric",
+    "label" : "Imputed NINQ",
+    "length" : 8,
+    "transformationVariable" : true
+  }, {
+    "name" : "IMP_REASON",
+    "role" : "input",
+    "type" : "string",
+    "label" : "Imputed REASON",
+    "length" : 7,
+    "transformationVariable" : true
+  }, {
+    "name" : "_PartInd_",
+    "role" : "partition",
+    "type" : "numeric",
+    "level" : "nominal",
+    "label" : "_PartInd_",
+    "length" : 8,
+    "transformationVariable" : false
+  }, {
+    "name" : "BAD",
+    "role" : "target",
+    "type" : "numeric",
+    "level" : "binary",
+    "label" : "",
+    "length" : 8,
+    "format" : "",
+    "transformationVariable" : false
+  }, {
+    "name" : "_dmIndex_",
+    "role" : "key",
+    "type" : "numeric",
+    "level" : "interval",
+    "length" : 8,
+    "transformationVariable" : true
+  } ],
+  "modelNodeProperties" : [ {
+    "sequence" : 1,
+    "actionName" : "bayesianNetClassifier.bnet",
+    "content" : "{\n \"alpha\": [ 0.2 ],\n \"bestModel\": true,\n \"debug\": 0,\n \"indepTest\": \"GSQUARE\",\n \"inputs\":   \n  [\n   {\n    \"name\": \"IMP_CLAGE\"\n   },\n   {\n    \"name\": \"IMP_CLNO\"\n   },\n   {\n    \"name\": \"IMP_DEBTINC\"\n   },\n   {\n    \"name\": \"IMP_MORTDUE\"\n   },\n   {\n    \"name\": \"IMP_VALUE\"\n   },\n   {\n    \"name\": \"IMP_YOJ\"\n   },\n   {\n    \"name\": \"LOAN\"\n   },\n   {\n    \"name\": \"IMP_DELINQ\"\n   },\n   {\n    \"name\": \"IMP_DEROG\"\n   },\n   {\n    \"name\": \"IMP_JOB\"\n   },\n   {\n    \"name\": \"IMP_NINQ\"\n   },\n   {\n    \"name\": \"IMP_REASON\"\n   }  \n  ],\n \"maxLevels\": 1000,\n \"maxParents\": 5,\n \"missingInt\": \"IGNORE\",\n \"missingNom\": \"IGNORE\",\n \"nominals\":   \n  [\n   {\n    \"name\": \"IMP_DELINQ\"\n   },\n   {\n    \"name\": \"IMP_DEROG\"\n   },\n   {\n    \"name\": \"IMP_JOB\"\n   },\n   {\n    \"name\": \"IMP_NINQ\"\n   },\n   {\n    \"name\": \"IMP_REASON\"\n   },\n   {\n    \"name\": \"BAD\"\n   }  \n  ],\n \"numBin\": 10,\n \"outNetwork\":\n  {\n   \"name\": \"NETWORK\",\n   \"replace\": true\n  },\n \"parenting\": [ \"BESTSET\" ],\n \"partByVar\":\n  {\n   \"name\": \"_PartInd_\",\n   \"test\": \"2\",\n   \"train\": \"1\",\n   \"validate\": \"0\"\n  },\n \"preScreening\": [ \"one\" ],\n \"printtarget\": true,\n \"saveState\":\n  {\n   \"name\": \"_3WEVP2SW6JE6PTWCV0OEMK8W9_AST\",\n   \"replace\": true\n  },\n \"structures\": [ \"NAIVE\", \"TAN\", \"PC\" ],\n \"table\":\n  {\n   \"name\": \"_INPUT_3WEVP2SW6JE6PTWCV0OEMK8W9\"\n  },\n \"target\": \"BAD\",\n \"varSelect\": [ \"ZERO\" ]\n}"
+  } ],
+  "rocDataUri" : {
+    "name" : "dmcas_roc",
+    "uri" : "/files/files/e75d71f1-d198-4811-9714-66c601f804a5",
+    "uriType" : "child",
+    "mediaType" : "application/vnd.sas.analytics.report+json"
+  },
+  "liftDataUri" : {
+    "name" : "dmcas_lift",
+    "uri" : "/files/files/fce44e8d-4557-4141-a2ec-318e1b4f4a34",
+    "uriType" : "child",
+    "mediaType" : "application/vnd.sas.analytics.report+json"
+  }
+}

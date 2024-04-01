@@ -1,0 +1,472 @@
+{
+  "creationTimeStamp" : "0001-01-01T00:00:00Z",
+  "modifiedTimeStamp" : "0001-01-01T00:00:00Z",
+  "revision" : 0,
+  "name" : "dmcas_misc",
+  "version" : 0,
+  "order" : 0,
+  "parameterMap" : {
+    "CorrectText" : {
+      "label" : "Status",
+      "length" : 12,
+      "order" : 8,
+      "parameter" : "CorrectText",
+      "preformatted" : false,
+      "type" : "char",
+      "values" : [ "CorrectText" ]
+    },
+    "Outcome" : {
+      "label" : "Predicted Outcome",
+      "length" : 256,
+      "order" : 6,
+      "parameter" : "Outcome",
+      "preformatted" : false,
+      "type" : "char",
+      "values" : [ "Outcome" ]
+    },
+    "OutcomeText" : {
+      "label" : "Predicted Outcome (Event/NonEvent)",
+      "length" : 12,
+      "order" : 7,
+      "parameter" : "OutcomeText",
+      "preformatted" : false,
+      "type" : "char",
+      "values" : [ "OutcomeText" ]
+    },
+    "Target" : {
+      "label" : "Target",
+      "length" : 256,
+      "order" : 4,
+      "parameter" : "Target",
+      "preformatted" : false,
+      "type" : "char",
+      "values" : [ "Target" ]
+    },
+    "TargetText" : {
+      "label" : "Target (Event/NonEvent)",
+      "length" : 12,
+      "order" : 5,
+      "parameter" : "TargetText",
+      "preformatted" : false,
+      "type" : "char",
+      "values" : [ "TargetText" ]
+    },
+    "_Count_" : {
+      "label" : "Count",
+      "length" : 8,
+      "order" : 10,
+      "parameter" : "_Count_",
+      "preformatted" : false,
+      "type" : "num",
+      "values" : [ "_Count_" ]
+    },
+    "_DataRole_" : {
+      "label" : "Data Role",
+      "length" : 10,
+      "order" : 11,
+      "parameter" : "_DataRole_",
+      "preformatted" : false,
+      "type" : "char",
+      "values" : [ "_DataRole_" ]
+    },
+    "_Percent_" : {
+      "label" : "Percent",
+      "length" : 8,
+      "order" : 9,
+      "parameter" : "_Percent_",
+      "preformatted" : false,
+      "type" : "num",
+      "values" : [ "_Percent_" ]
+    },
+    "_TargetName_" : {
+      "label" : "Target Name",
+      "length" : 3,
+      "order" : 1,
+      "parameter" : "_TargetName_",
+      "preformatted" : false,
+      "type" : "char",
+      "values" : [ "_TargetName_" ]
+    },
+    "_cutoffSource_" : {
+      "label" : "Cutoff Source",
+      "length" : 8,
+      "order" : 3,
+      "parameter" : "_cutoffSource_",
+      "preformatted" : false,
+      "type" : "char",
+      "values" : [ "_cutoffSource_" ]
+    },
+    "_cutoff_" : {
+      "label" : "Cutoff",
+      "length" : 8,
+      "order" : 2,
+      "parameter" : "_cutoff_",
+      "preformatted" : false,
+      "type" : "num",
+      "values" : [ "_cutoff_" ]
+    }
+  },
+  "data" : [ {
+    "dataMap" : {
+      "CorrectText" : "CORRECT",
+      "Outcome" : "           1",
+      "OutcomeText" : "Event",
+      "Target" : "           1",
+      "TargetText" : "Event",
+      "_Count_" : "39",
+      "_DataRole_" : "TEST",
+      "_Percent_" : "81.25",
+      "_TargetName_" : "BAD",
+      "_cutoffSource_" : "KS",
+      "_cutoff_" : "0.18"
+    },
+    "rowNumber" : 1
+  }, {
+    "dataMap" : {
+      "CorrectText" : "INCORRECT",
+      "Outcome" : "           0",
+      "OutcomeText" : "NEvent",
+      "Target" : "           1",
+      "TargetText" : "Event",
+      "_Count_" : "9",
+      "_DataRole_" : "TEST",
+      "_Percent_" : "18.75",
+      "_TargetName_" : "BAD",
+      "_cutoffSource_" : "KS",
+      "_cutoff_" : "0.18"
+    },
+    "rowNumber" : 2
+  }, {
+    "dataMap" : {
+      "CorrectText" : "CORRECT",
+      "Outcome" : "           0",
+      "OutcomeText" : "NEvent",
+      "Target" : "           0",
+      "TargetText" : "NEvent",
+      "_Count_" : "159",
+      "_DataRole_" : "TEST",
+      "_Percent_" : "83.2460732984",
+      "_TargetName_" : "BAD",
+      "_cutoffSource_" : "KS",
+      "_cutoff_" : "0.18"
+    },
+    "rowNumber" : 3
+  }, {
+    "dataMap" : {
+      "CorrectText" : "INCORRECT",
+      "Outcome" : "           1",
+      "OutcomeText" : "Event",
+      "Target" : "           0",
+      "TargetText" : "NEvent",
+      "_Count_" : "32",
+      "_DataRole_" : "TEST",
+      "_Percent_" : "16.7539267016",
+      "_TargetName_" : "BAD",
+      "_cutoffSource_" : "KS",
+      "_cutoff_" : "0.18"
+    },
+    "rowNumber" : 4
+  }, {
+    "dataMap" : {
+      "CorrectText" : "CORRECT",
+      "Outcome" : "           1",
+      "OutcomeText" : "Event",
+      "Target" : "           1",
+      "TargetText" : "Event",
+      "_Count_" : "22",
+      "_DataRole_" : "TEST",
+      "_Percent_" : "45.8333333333",
+      "_TargetName_" : "BAD",
+      "_cutoffSource_" : "Default",
+      "_cutoff_" : "0.5"
+    },
+    "rowNumber" : 5
+  }, {
+    "dataMap" : {
+      "CorrectText" : "INCORRECT",
+      "Outcome" : "           0",
+      "OutcomeText" : "NEvent",
+      "Target" : "           1",
+      "TargetText" : "Event",
+      "_Count_" : "26",
+      "_DataRole_" : "TEST",
+      "_Percent_" : "54.1666666667",
+      "_TargetName_" : "BAD",
+      "_cutoffSource_" : "Default",
+      "_cutoff_" : "0.5"
+    },
+    "rowNumber" : 6
+  }, {
+    "dataMap" : {
+      "CorrectText" : "CORRECT",
+      "Outcome" : "           0",
+      "OutcomeText" : "NEvent",
+      "Target" : "           0",
+      "TargetText" : "NEvent",
+      "_Count_" : "186",
+      "_DataRole_" : "TEST",
+      "_Percent_" : "97.3821989529",
+      "_TargetName_" : "BAD",
+      "_cutoffSource_" : "Default",
+      "_cutoff_" : "0.5"
+    },
+    "rowNumber" : 7
+  }, {
+    "dataMap" : {
+      "CorrectText" : "INCORRECT",
+      "Outcome" : "           1",
+      "OutcomeText" : "Event",
+      "Target" : "           0",
+      "TargetText" : "NEvent",
+      "_Count_" : "5",
+      "_DataRole_" : "TEST",
+      "_Percent_" : "2.61780104712",
+      "_TargetName_" : "BAD",
+      "_cutoffSource_" : "Default",
+      "_cutoff_" : "0.5"
+    },
+    "rowNumber" : 8
+  }, {
+    "dataMap" : {
+      "CorrectText" : "CORRECT",
+      "Outcome" : "           1",
+      "OutcomeText" : "Event",
+      "Target" : "           1",
+      "TargetText" : "Event",
+      "_Count_" : "223",
+      "_DataRole_" : "TRAIN",
+      "_Percent_" : "78.2456140351",
+      "_TargetName_" : "BAD",
+      "_cutoffSource_" : "KS",
+      "_cutoff_" : "0.15"
+    },
+    "rowNumber" : 9
+  }, {
+    "dataMap" : {
+      "CorrectText" : "INCORRECT",
+      "Outcome" : "           0",
+      "OutcomeText" : "NEvent",
+      "Target" : "           1",
+      "TargetText" : "Event",
+      "_Count_" : "62",
+      "_DataRole_" : "TRAIN",
+      "_Percent_" : "21.7543859649",
+      "_TargetName_" : "BAD",
+      "_cutoffSource_" : "KS",
+      "_cutoff_" : "0.15"
+    },
+    "rowNumber" : 10
+  }, {
+    "dataMap" : {
+      "CorrectText" : "CORRECT",
+      "Outcome" : "           0",
+      "OutcomeText" : "NEvent",
+      "Target" : "           0",
+      "TargetText" : "NEvent",
+      "_Count_" : "852",
+      "_DataRole_" : "TRAIN",
+      "_Percent_" : "74.5406824147",
+      "_TargetName_" : "BAD",
+      "_cutoffSource_" : "KS",
+      "_cutoff_" : "0.15"
+    },
+    "rowNumber" : 11
+  }, {
+    "dataMap" : {
+      "CorrectText" : "INCORRECT",
+      "Outcome" : "           1",
+      "OutcomeText" : "Event",
+      "Target" : "           0",
+      "TargetText" : "NEvent",
+      "_Count_" : "291",
+      "_DataRole_" : "TRAIN",
+      "_Percent_" : "25.4593175853",
+      "_TargetName_" : "BAD",
+      "_cutoffSource_" : "KS",
+      "_cutoff_" : "0.15"
+    },
+    "rowNumber" : 12
+  }, {
+    "dataMap" : {
+      "CorrectText" : "CORRECT",
+      "Outcome" : "           1",
+      "OutcomeText" : "Event",
+      "Target" : "           1",
+      "TargetText" : "Event",
+      "_Count_" : "120",
+      "_DataRole_" : "TRAIN",
+      "_Percent_" : "42.1052631579",
+      "_TargetName_" : "BAD",
+      "_cutoffSource_" : "Default",
+      "_cutoff_" : "0.5"
+    },
+    "rowNumber" : 13
+  }, {
+    "dataMap" : {
+      "CorrectText" : "INCORRECT",
+      "Outcome" : "           0",
+      "OutcomeText" : "NEvent",
+      "Target" : "           1",
+      "TargetText" : "Event",
+      "_Count_" : "165",
+      "_DataRole_" : "TRAIN",
+      "_Percent_" : "57.8947368421",
+      "_TargetName_" : "BAD",
+      "_cutoffSource_" : "Default",
+      "_cutoff_" : "0.5"
+    },
+    "rowNumber" : 14
+  }, {
+    "dataMap" : {
+      "CorrectText" : "CORRECT",
+      "Outcome" : "           0",
+      "OutcomeText" : "NEvent",
+      "Target" : "           0",
+      "TargetText" : "NEvent",
+      "_Count_" : "1102",
+      "_DataRole_" : "TRAIN",
+      "_Percent_" : "96.4129483815",
+      "_TargetName_" : "BAD",
+      "_cutoffSource_" : "Default",
+      "_cutoff_" : "0.5"
+    },
+    "rowNumber" : 15
+  }, {
+    "dataMap" : {
+      "CorrectText" : "INCORRECT",
+      "Outcome" : "           1",
+      "OutcomeText" : "Event",
+      "Target" : "           0",
+      "TargetText" : "NEvent",
+      "_Count_" : "41",
+      "_DataRole_" : "TRAIN",
+      "_Percent_" : "3.58705161855",
+      "_TargetName_" : "BAD",
+      "_cutoffSource_" : "Default",
+      "_cutoff_" : "0.5"
+    },
+    "rowNumber" : 16
+  }, {
+    "dataMap" : {
+      "CorrectText" : "CORRECT",
+      "Outcome" : "           1",
+      "OutcomeText" : "Event",
+      "Target" : "           1",
+      "TargetText" : "Event",
+      "_Count_" : "113",
+      "_DataRole_" : "VALIDATE",
+      "_Percent_" : "79.020979021",
+      "_TargetName_" : "BAD",
+      "_cutoffSource_" : "KS",
+      "_cutoff_" : "0.12"
+    },
+    "rowNumber" : 17
+  }, {
+    "dataMap" : {
+      "CorrectText" : "INCORRECT",
+      "Outcome" : "           0",
+      "OutcomeText" : "NEvent",
+      "Target" : "           1",
+      "TargetText" : "Event",
+      "_Count_" : "30",
+      "_DataRole_" : "VALIDATE",
+      "_Percent_" : "20.979020979",
+      "_TargetName_" : "BAD",
+      "_cutoffSource_" : "KS",
+      "_cutoff_" : "0.12"
+    },
+    "rowNumber" : 18
+  }, {
+    "dataMap" : {
+      "CorrectText" : "CORRECT",
+      "Outcome" : "           0",
+      "OutcomeText" : "NEvent",
+      "Target" : "           0",
+      "TargetText" : "NEvent",
+      "_Count_" : "377",
+      "_DataRole_" : "VALIDATE",
+      "_Percent_" : "66.0245183888",
+      "_TargetName_" : "BAD",
+      "_cutoffSource_" : "KS",
+      "_cutoff_" : "0.12"
+    },
+    "rowNumber" : 19
+  }, {
+    "dataMap" : {
+      "CorrectText" : "INCORRECT",
+      "Outcome" : "           1",
+      "OutcomeText" : "Event",
+      "Target" : "           0",
+      "TargetText" : "NEvent",
+      "_Count_" : "194",
+      "_DataRole_" : "VALIDATE",
+      "_Percent_" : "33.9754816112",
+      "_TargetName_" : "BAD",
+      "_cutoffSource_" : "KS",
+      "_cutoff_" : "0.12"
+    },
+    "rowNumber" : 20
+  }, {
+    "dataMap" : {
+      "CorrectText" : "CORRECT",
+      "Outcome" : "           1",
+      "OutcomeText" : "Event",
+      "Target" : "           1",
+      "TargetText" : "Event",
+      "_Count_" : "44",
+      "_DataRole_" : "VALIDATE",
+      "_Percent_" : "30.7692307692",
+      "_TargetName_" : "BAD",
+      "_cutoffSource_" : "Default",
+      "_cutoff_" : "0.5"
+    },
+    "rowNumber" : 21
+  }, {
+    "dataMap" : {
+      "CorrectText" : "INCORRECT",
+      "Outcome" : "           0",
+      "OutcomeText" : "NEvent",
+      "Target" : "           1",
+      "TargetText" : "Event",
+      "_Count_" : "99",
+      "_DataRole_" : "VALIDATE",
+      "_Percent_" : "69.2307692308",
+      "_TargetName_" : "BAD",
+      "_cutoffSource_" : "Default",
+      "_cutoff_" : "0.5"
+    },
+    "rowNumber" : 22
+  }, {
+    "dataMap" : {
+      "CorrectText" : "CORRECT",
+      "Outcome" : "           0",
+      "OutcomeText" : "NEvent",
+      "Target" : "           0",
+      "TargetText" : "NEvent",
+      "_Count_" : "537",
+      "_DataRole_" : "VALIDATE",
+      "_Percent_" : "94.0455341506",
+      "_TargetName_" : "BAD",
+      "_cutoffSource_" : "Default",
+      "_cutoff_" : "0.5"
+    },
+    "rowNumber" : 23
+  }, {
+    "dataMap" : {
+      "CorrectText" : "INCORRECT",
+      "Outcome" : "           1",
+      "OutcomeText" : "Event",
+      "Target" : "           0",
+      "TargetText" : "NEvent",
+      "_Count_" : "34",
+      "_DataRole_" : "VALIDATE",
+      "_Percent_" : "5.95446584939",
+      "_TargetName_" : "BAD",
+      "_cutoffSource_" : "Default",
+      "_cutoff_" : "0.5"
+    },
+    "rowNumber" : 24
+  } ],
+  "xInteger" : false,
+  "yInteger" : false
+}

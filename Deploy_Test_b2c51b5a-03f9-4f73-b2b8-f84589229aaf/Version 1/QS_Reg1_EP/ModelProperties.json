@@ -1,0 +1,23 @@
+{
+   "creationTimeStamp": "2024-04-01T20:36:21.032Z",
+   "createdBy": "edmdev",
+   "modifiedTimeStamp": "2024-04-01T20:36:24.689Z",
+   "modifiedBy": "edmdev",
+   "id": "5c5a06e6-bf53-44e9-814a-90ff625760bc",
+   "name": "QS_Reg1 EP",
+   "description": "Logistic Regression",
+   "scoreCodeType": "dataStep",
+   "algorithm": "logisticreg",
+   "function": "classification",
+   "modeler": "sasdemo",
+   "modelType": "dataStep",
+   "trainTable": "/dataTables/dataSources/cas~fs~cas-shared-default~fs~Public/tables/HMEQ_TRAIN",
+   "eventProbVar": "EM_EVENTPROBABILITY",
+   "targetVariable": "BAD",
+   "targetEvent": "1",
+   "targetLevel": "binary",
+   "tool": "Model Studio",
+   "toolVersion": "8.3",
+   "modelVersionName": "1.0",
+   "custom properties": []
+}

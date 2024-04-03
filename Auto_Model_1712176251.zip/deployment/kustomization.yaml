@@ -1,0 +1,6 @@
+namespace: scr
+resources:
+ - deployment.yaml
+ - ingress.yaml
+ - service.yaml
+ - hpa.yaml
